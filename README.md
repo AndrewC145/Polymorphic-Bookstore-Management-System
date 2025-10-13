@@ -37,3 +37,19 @@ However, we cannot ignore the efficiency of `HashMap` when it comes to searching
 Finally, the choice between the two. I will choose `ArrayList` if we have a small dataset where the serial order of items matters and we need to constantly loop through all data to generate a report. Otherwise, given a large data set and the main function of repeated seraching an item base on a key, I will choose a `Hashmap`.
 
 
+8. I believe the Open/Closed Principle is the most important for writing maintainable code.
+This principle states that classes should be open for extension but closed for modification — meaning we can add new functionality without changing existing, tested code.
+
+In my implementation, the abstract Material class and the Media interface demonstrate this principle.
+For example, when I introduced PrintedBook and VideoMaterial, I didn’t have to modify the existing Material class — I simply extended it to add specialized behavior such as ISBN validation for books and video compression or streaming bandwidth for videos.
+
+If in the future the system needs to support new material types like Audiobooks or Magazines, I can easily add new subclasses without changing the core logic in Material, ensuring the system remains stable and maintainable.
+
+
+
+10.
+
+The most challenging concept in this lab was designing the class hierarchy using inheritance and interfaces while ensuring proper data validation and polymorphic behavior.
+At first, the group found it difficult to decide which attributes and methods should belong in the abstract Material class versus the subclasses like PrintedBook or VideoMaterial. The challenge was overcome by reviewing object-oriented design principles, analyzing class diagrams from lecture materials, and consulting the official Java documentation on inheritance and interfaces.
+
+The team also tested the design by creating instances of different material types and observing that the overridden methods, such as getDisplayInfo(), behaved correctly when accessed through a Material reference. This hands-on experimentation helped reinforce the understanding of polymorphism and abstraction, showing how these concepts lead to a more extensible and maintainable system.
