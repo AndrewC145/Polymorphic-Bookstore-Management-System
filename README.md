@@ -20,6 +20,17 @@ The media interface demonstrates the I in the SOLID principles, interface segreg
 
 So, the Media interface is valuable as it separates methods that are required by certain subclasses and types of Materials, rather than just putting everything into one big Material class where some methods are unnecessary and will go unused. 
 
+4. Defensive Programming: Identify three defensive programming techniques used in the
+codebase. How do they prevent bugs and improve reliability?
+
+Exception handling, input validation, and immutability are three of the defensive programming techniques used in the codebase. Exception handling would send a message if an exception is caught in the program while it’s running afterwards it will stop the program. Input validation would check if a user input meets a certain requirement to throw an exception. Immutability keeps values fixed which prevents any values from being changed.
+
+5. Testing Strategy: Why is it important to test both valid and invalid inputs? Give an
+example of a boundary condition test from the codebase.
+
+Testing valid inputs will help to ensure that the program is operating properly as intended. Giving invalid inputs helps to reveal how the program will run when an input is wrong. This can prevent potential crashes from occurring and also improve user trust.
+An example of boundary condition within the codebase would be the (size <= 0.0) which will throw an illegal argument exception when the condition is met.
+
 6. Design Patterns: Which design pattern from the lab do you find most useful? How would you apply it in your own projects?
 
 I found the factory design pattern the most useful. One instance of where this project uses factory pattern is with the `MaterialFactory` class. It forces all child class of `Material` to be created through the factory class, ensuring that no constructors are exposed. The `MaterialFactory` simply takes 2 parameters, the type of material, and its properties. This security feature ensures that no outside program can create instances of materials without knowing the parameters. Also, the factory itself have validate methods that ensures that the data correctness before creating any object. 
@@ -45,6 +56,8 @@ For example, when I introduced PrintedBook and VideoMaterial, I didn’t have to
 
 If in the future the system needs to support new material types like Audiobooks or Magazines, I can easily add new subclasses without changing the core logic in Material, ensuring the system remains stable and maintainable.
 
+9. Code Quality: What makes code ”clean”? Identify three characteristics of clean code demonstrated in this lab.
+A code is clean when it can be easily understood by other users. Three characteristics that can be found in a clean code would be the simplicity of the code which makes it easy for other users to read, the good naming conventions for classes and functions, and error handling to ensure that a program can respond accordingly if a condition is not met.
 
 
 10.
