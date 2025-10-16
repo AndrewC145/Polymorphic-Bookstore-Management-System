@@ -2,7 +2,7 @@
 
 ## Video Reflection
 
-https://youtu.be/-6u8hD0d3XU
+<video src="https://youtu.be/-6u8hD0d3XU" width="320" height="240" controls></video>
 
 
 
