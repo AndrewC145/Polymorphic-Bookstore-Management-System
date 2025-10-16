@@ -2,7 +2,7 @@
 
 ## Video Reflection
 
-![](https://youtu.be/-6u8hD0d3XU)
+https://youtu.be/-6u8hD0d3XU
 
 
 
