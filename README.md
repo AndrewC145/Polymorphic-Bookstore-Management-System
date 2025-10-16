@@ -2,7 +2,7 @@
 
 ## Video Reflection
 
-youtube.com/watch?v=-6u8hD0d3XU&feature=youtu.be
+[![Lab 1: Jinyang, Andrew, Shrey, Courage](https://img.youtube.com/vi/-6u8hD0d3XU/0.jpg)](youtube.com/watch?v=-6u8hD0d3XU)
 
 
 
